@@ -1,0 +1,8 @@
+{% extends "mains/wrapper.html" %}
+{% block content %}
+<div class=list>
+{% for i in events %}
+    <a href = "/{{i.id}}" class = "article">{{ i.title }}</a>
+{% endfor %}
+</div>
+{% endblock %}

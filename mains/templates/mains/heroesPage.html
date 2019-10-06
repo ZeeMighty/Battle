@@ -1,0 +1,18 @@
+
+{% extends "mains/wrapper.html" %}
+
+{% block content %}
+<div class = area>
+    <h1>{{heroes.name}}</h1>
+    <h3 class = info_t>Биография:</h3>
+    <p class = info>{{heroes.biography}}</p>
+    <h3 class=info_t>Руководил:</h3>
+    <p class=info>{{heroes.army}}</p>
+    <h3 class=info_t>Награды:</h3>
+    <p class = info>{{heroes.rewards}}</p>
+    <h3 class=info_t>Годы жизни:</h3>
+    <p class = info>{{heroes.lived}}</p>
+    <h3 class=info_t>Принимал участие в событиях:</h3>
+    <a href = "/{{heroes.took_part.id}}" class=info>{{heroes.took_part}}</a>
+</div>
+{% endblock %}

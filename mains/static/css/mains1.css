@@ -1,0 +1,46 @@
+
+body {
+	background: #2a2a2a;
+	overflow: hidden;
+	color: aliceblue;
+	font-family: 'Montserrat', sans-serif;
+}
+.area {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+a {
+	color: aliceblue;
+	font-family: 'Montserrat', sans-serif;
+}
+.list {
+	display: flex;
+	margin: 0 auto;
+	width: 80vw;
+	height: 90vh;
+	Justify-content: flex-start;
+	flex-direction: column;
+}
+
+.article {
+	background: #4b4b4b;
+	border: 1px solid white;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	font-size: 30px;
+}
+.info {
+	margin-block-start: 0em;
+	margin-top: 0px;
+	margin-top: 7px;
+}
+.info_t {
+	margin-block-end: 0em;
+	margin-block-start: 0em;
+}
