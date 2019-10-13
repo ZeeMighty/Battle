@@ -18,6 +18,7 @@ class event(models.Model):
     body = models.TextField()
     result = models.TextField()
     participants = models.ManyToManyField(heroe, blank=True)
+    event_id = models.ForeignKey('date', on_delete=models.CASCADE, related_name = "event_date", null=True)
     # event_date = models.ForeignKey('date', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
@@ -35,7 +36,10 @@ class army(models.Model):
 
 class date(models.Model):
     date = models.DateField()
-    date_id = models.ForeignKey(event, on_delete=models.CASCADE, null=True)
+#    date_id = models.ForeignKey(event, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return str(self.date)
 
 
 class place(models.Model):

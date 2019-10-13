@@ -1,0 +1,12 @@
+{% extends "mains/wrapper.html" %}
+{% block content %}
+<div class = area>
+    
+    {% for e in date %}
+    <div class = "article">{{ e.date }} {% for d in e.event_date.all %} <br><a href = "../{{d.id}}">{{d.title}}</a> {% endfor %} </div><br>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

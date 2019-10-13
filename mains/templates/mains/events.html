@@ -4,7 +4,7 @@
 <div class = area>
 {% for e in events %}
   <h2>{{e.title}}</h2>
-  <h3>Начало события: {{date.date|date:"Y-m-d"}}</h3>
+  <h3>Начало события: {{e.event_id.date|date:"Y-m-d"}}</h3>
   <p>{{e.body|safe}}</p><br>
   <h3 class = info_t>Результат:</h3>
   <p class = info>{{e.result}}</p><br>

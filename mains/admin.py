@@ -46,9 +46,11 @@ class EventAdmin(admin.ModelAdmin):
     ('Participants', {'fields': ['participants']}),
     ('History', {'fields': ['body'], 'classes': ['collapse']}),
     ('Result', {'fields': ['result'], 'classes': ['collapse']}),
+    ('Date', {'fields': ['event_id']}),
     ]
-    inlines = [Date, Place]
+    inlines = [Place]
 
 admin.site.register(event, EventAdmin)
 admin.site.register(army, ArmyAdmin)
 admin.site.register(heroe, HeroeAdmin)
+admin.site.register(date)

@@ -1,9 +1,12 @@
 
 body {
 	background: #2a2a2a;
-	overflow: hidden;
+	overflow-y: auto;
 	color: aliceblue;
 	font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar{
+width: 0px;
 }
 .area {
 	display: block;
@@ -34,6 +37,7 @@ a {
 	text-align: center;
 	display: block;
 	font-size: 30px;
+	box-shadow: 3px 3px 5px 0 black;
 }
 .info {
 	margin-block-start: 0em;
@@ -43,4 +47,16 @@ a {
 .info_t {
 	margin-block-end: 0em;
 	margin-block-start: 0em;
+}
+.dates {
+	background: #4b4b4b;
+	text-decoration: none;
+	display: block;
+	padding: 12px;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin: 0 auto;
+	font-size: 19px;
+	border: 1px solid white;
+	box-shadow: 3px 3px 5px 0 black;
 }
